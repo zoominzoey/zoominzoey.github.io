@@ -1,2 +1,228 @@
 <h1>Zoey Carter</h1>
 <h2>coming soon</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Zoey Carter for City Council</title>
+    <style>
+        :root {
+            --primary-purple: #30005A;
+            --primary-orange: #FF8C00;
+            --light-bg: #f9f9f9;
+            --dark-text: #333;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+        }
+        /* Navigation */
+        nav {
+            background-color: var(--primary-purple);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav img.logo {
+            height: 60px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--primary-orange);
+        }
+        .donate-btn {
+            background-color: var(--primary-orange);
+            color: var(--white) !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .donate-btn:hover {
+            background-color: #e07b00;
+        }
+        /* Hero Section */
+        header.hero {
+            background-color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 5px solid var(--primary-orange);
+        }
+        header.hero img.hero-logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        header.hero h2 {
+            color: var(--primary-purple);
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .about-content img.meet-zoey {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+        /* Goals Section */
+        .goals {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-top: 40px;
+        }
+        .goals h2 {
+            color: var(--primary-purple);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .goal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .goal-card {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary-orange);
+        }
+        .goal-card h3 {
+            color: var(--primary-purple);
+            margin-top: 0;
+        }
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+        .cta-section h2 {
+            margin-top: 0;
+            color: var(--primary-orange);
+        }
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        /* Footer */
+        footer {
+            background-color: #1a0033;
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+        }
+        footer img.footer-logo {
+            max-width: 200px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/">
+            <img src="images/City Council Transparent.jpg" alt="Carter for Council Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#goals">Platform</a></li>
+            <li><a href="https://secure.actblue.com/donate/carterforcouncil" class="donate-btn" target="_blank">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="images/City Council Transparent.jpg" alt="Zoey Carter for City Council" class="hero-logo">
+        <h2>Dedicated Leadership for Our Future</h2>
+        <a href="https://secure.actblue.com/donate/carterforcouncil" class="donate-btn" style="font-size: 1.2rem; padding: 15px 30px;" target="_blank">Support the Campaign</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <img src="images/Meet Zoey solid (1).png" alt="Meet Zoey" class="meet-zoey">
+            <p>I am running for City Council because I believe in the potential of our community. With a focus on transparency, sensible growth, and community engagement, I am committed to listening to your concerns and working tirelessly to make our city a better place for everyone to live, work, and thrive.</p>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="goals">
+        <h2>Campaign Platform</h2>
+        <div class="goal-grid">
+            <div class="goal-card">
+                <h3>Economic Development</h3>
+                <p>Supporting local businesses and attracting new opportunities to create sustainable job growth and strengthen our local economy.</p>
+            </div>
+            <div class="goal-card">
+                <h3>Infrastructure Improvement</h3>
+                <p>Investing in the maintenance and modernization of our roads, utilities, and public spaces to ensure a reliable foundation for our city.</p>
+            </div>
+            <div class="goal-card">
+                <h3>Government Transparency</h3>
+                <p>Ensuring that city council decisions are accessible and community voices are actively included in the legislative process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+        <h2>Join the Movement</h2>
+        <p>Every contribution helps us reach more voters and share our vision for the city.</p>
+        <a href="https://secure.actblue.com/donate/carterforcouncil" class="donate-btn" style="font-size: 1.2rem; padding: 15px 30px;" target="_blank">Donate via ActBlue</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="images/City Council Transparent.jpg" alt="Carter for Council" class="footer-logo"><br>
+        <small>Paid for by the Committee to Elect Zoey Carter</small>
+    </footer>
+
+</body>
+</html>
